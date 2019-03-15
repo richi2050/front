@@ -10,12 +10,11 @@
 </div>
 
 
-<div class="container-fluid" *ngIf="!identity" >
-  <div class="container">
-    <div class="container-page">
+<div class="container" *ngIf="!identity" >
+    <div class="row">
       <div class="col-md-6">
-          <h3 class="dark-grey">Registration</h3>
-          <form action="" class="col-md-10">
+          <h3 class="dark-grey">Identificate</h3>
+          <form #loginForm="ngForm">
               <p>
                 <label for="">Correo Electronico:</label>
                 <input type="text" class="form-control" required />
@@ -28,10 +27,26 @@
           </form>
       </div>
       <div class="col-md-6">
-        </div>
+          <h3 class="dark-grey">Registrate</h3>
+          <form action="">
+            <p>
+              <label for="">Nombre:</label>
+              <input type="text" class="form-control" required />
+            </p>
+            <p>
+              <label for="">Apellidos</label>
+              <input type="text" class="form-control" required />
+            </p>
+            <p>
+              <label for="">Correo Electronico</label>
+              <input type="text" class="form-control" required />
+            </p>
+            <p>
+              <label for="">Contraseña</label>
+              <input type="password" class="form-control" required >
+            </p>
+            <input type="submit" value="Entrar" class="btn btn-primary" />
+          </form>
+      </div>
     </div>
-
-  <div class="col-lg-6">
-    <h1>Registrate</h1>
-  </div>
 </div>
